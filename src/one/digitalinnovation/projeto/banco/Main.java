@@ -1,5 +1,9 @@
 package one.digitalinnovation.projeto.banco;
 
+import one.digitalinnovation.projeto.banco.conta.Conta;
+import one.digitalinnovation.projeto.banco.conta.ContaCorrente;
+import one.digitalinnovation.projeto.banco.conta.ContaPoupanca;
+
 public class Main {
 
     public static void main(String[] args) {

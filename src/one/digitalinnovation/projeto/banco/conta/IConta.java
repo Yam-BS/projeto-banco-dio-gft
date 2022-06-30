@@ -1,4 +1,4 @@
-package one.digitalinnovation.projeto.banco;
+package one.digitalinnovation.projeto.banco.conta;
 
 public interface IConta {
 

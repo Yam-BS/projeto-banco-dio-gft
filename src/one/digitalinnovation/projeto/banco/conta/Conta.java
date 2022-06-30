@@ -1,6 +1,10 @@
-package one.digitalinnovation.projeto.banco;
+package one.digitalinnovation.projeto.banco.conta;
 
-public abstract class Conta implements IConta{
+import one.digitalinnovation.projeto.banco.Cliente;
+
+import java.util.Collections;
+
+public abstract class Conta implements IConta, Comparable<Conta>{
 
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
@@ -49,5 +53,20 @@ public abstract class Conta implements IConta{
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Numero: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
+    }
+
+    @Override
+    public int compareTo(Conta conta) {
+        return this.cliente.getNome().compareToIgnoreCase(conta.cliente.getNome());
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "agencia= " + agencia +
+                ", numero= " + numero +
+                ", saldo= " + saldo +
+                ", cliente= " + cliente +
+                '}';
     }
 }

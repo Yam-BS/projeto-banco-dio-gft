@@ -1,4 +1,6 @@
-package one.digitalinnovation.projeto.banco;
+package one.digitalinnovation.projeto.banco.conta;
+
+import one.digitalinnovation.projeto.banco.Cliente;
 
 public class ContaPoupanca extends Conta{
 
